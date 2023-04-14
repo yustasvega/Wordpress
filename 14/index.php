@@ -5,7 +5,7 @@ error_reporting(error_level: -1);
 $price = null;
 // var_dump($price);
 
-$light = 'green2';
+$light = 'green';
 
 /* if ($light === 'green') {
    echo 'You can go now';
