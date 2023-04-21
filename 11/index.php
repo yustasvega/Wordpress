@@ -1,28 +1,23 @@
-<?php
-error_reporting(error_level: -1);
-// Логические операторы
+<?php error_reporting(-1);
 
-/* $a = (3 == 3) && (3 < 2); // true && false 
-var_dump($a); //false */
+/*$a = (3 == 3) && (3 < 2); // true && false
+var_dump($a); // false
 
-/* $a = (3 == 3) and (3 < 2); // true && false 
-var_dump($a); //true
+$a = (3 == 3) and (3 < 2); // true && false
+var_dump($a); // true
 
-$a = (2 == 3) || (3 > 2); // true && false 
-var_dump($a); //true
+$a = (2 == 3) || (3 > 2); // false || true
+var_dump($a); // true
 
-$a = (2 == 3) or (3 > 2); // true && false 
-var_dump($a); //false
- */
+$a = (2 == 3) or (3 > 2); // false || true
+var_dump($a); // false*/
 
-// var_dump(!(2 > 2)); //true
+//var_dump(!(2 > 3));
 
-//Строковые операторы (Конкотенация)
+//echo "<p>Hello 1</p>" . PHP_EOL . "<p>Hello 2</p>" . PHP_EOL;
 
-// echo "<p>Hello 1</p>" . PHP_EOL . "<p>Hello 3</p>" . PHP_EOL;
+//$name = 'John';
+//echo 'Hello ' . $name;
 
-// $name = 'John';
-// echo 'Hello ' . $name;
-
-// $hi = 'Hello, ';
-// echo $hi .= 'world!';
+$hi = 'Hello, ';
+echo $hi .= 'world!';

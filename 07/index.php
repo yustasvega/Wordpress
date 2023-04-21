@@ -1,21 +1,35 @@
-<?php
-error_reporting(error_level: -1);
-$name = "Юрий";
+<?php error_reporting(-1);
+
 $str = '<p>Hello 1</p>';
 $str2 = "<p>Hello 2</p>";
 
 echo "<p>Hello 1</p>\n";
-echo "<p>Hello \ 2</p>";
+echo "<p>Hello \\2</p>";
 echo PHP_EOL;
 echo "<p>Hello 3</p>\n";
+echo '<p>Hello \2</p>\n';
 
-$str3 = "Aliquip quis nostrud ipsum exercitation sint ea. Laboris cupidatat magna quis non id dolore cupidatat ad dolor quis. Consequat cillum eiusmod ad duis. Ipsum reprehenderit excepteur occaecat fugiat eu esse. Nulla consequat tempor et officia eiusmod ullamco ullamco Lorem cupidatat irure id. Qui consequat veniam incididunt id aliqua dolore voluptate duis nostrud velit ut exercitation cupidatat id.";
+$str3 = "Lorem ipsum dolor sit \"amet\", consectetur 'adipisicing' elit. Architecto at delectus eaque est explicabo odio quo saepe vel? Assumenda doloremque doloribus eos eum excepturi explicabo laborum maiores reprehenderit saepe suscipit?";
 
-$str4 = <<<HEREDOC
+$name = 'John';
+$str4 = <<<"HEREDOC"
 <div>
 Hello $name <br>
-Aliquip quis nostrud ipsum exercitation sint ea. Laboris cupidatat magna quis non id dolore cupidatat ad dolor quis. Consequat cillum eiusmod ad duis. Ipsum reprehenderit excepteur occaecat fugiat eu esse. Nulla consequat tempor et officia eiusmod ullamco ullamco Lorem cupidatat irure id. Qui consequat veniam incididunt id aliqua dolore voluptate duis nostrud velit ut exercitation cupidatat id.
+Lorem ipsum dolor sit "amet", consectetur 'adipisicing' elit. Architecto at delectus eaque est explicabo odio quo saepe vel? Assumenda doloremque doloribus eos eum excepturi explicabo laborum maiores reprehenderit saepe suscipit?
+Пример использования слеша \\ и \n
 </div>
 HEREDOC;
 
-echo $str3, $str4;
+echo $str4;
+
+$str5 = <<<'NOWDOC'
+<div>
+Hello $name <br>
+Lorem ipsum dolor sit "amet", consectetur 'adipisicing' elit. Architecto at delectus eaque est explicabo odio quo saepe vel? Assumenda doloremque doloribus eos eum excepturi explicabo laborum maiores reprehenderit saepe suscipit?
+Пример использования слеша \\ и \n
+</div>
+NOWDOC;
+
+echo $str5;
+
+var_dump((string)false);

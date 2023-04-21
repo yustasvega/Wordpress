@@ -1,26 +1,45 @@
-<?php
-error_reporting(error_level: -1);
+<?php error_reporting(-1);
 
-// Оператор switch:
+$i = '3';
 
-/* $i = 4;
+/*if ($i == 1) {
+    echo 1;
+} elseif ($i == 2) {
+    echo 2;
+} elseif ($i == 3) {
+    echo 3;
+} elseif ($i == 4) {
+    echo 4;
+} else {
+    echo 5;
+}*/
+
+/*switch ($i) {
+    case 1:
+        echo 1;
+        break;
+    case 2:
+        echo 2;
+        break;
+    case 3:
+        echo 3;
+        break;
+    case 4:
+        echo 4;
+        break;
+    default:
+        echo 5;
+}*/
 
 switch ($i) {
-   case 0:
-      echo "i равно 0";
-      break;
-   case 1:
-      echo "i равно 1";
-      break;
-   case 2:
-      echo "i равно 2";
-      break;
-   case 3:
-      echo "i равно 3";
-      break;
-   case 4:
-      echo "i равно 4";
-      break;
-   default:
-      echo 5;
-} */
+    case 1:
+    case 2:
+    case 3:
+        echo "Переменная < 4";
+        break;
+    case 4:
+        echo 4;
+        break;
+    default:
+        echo "Переменная > 4";
+}

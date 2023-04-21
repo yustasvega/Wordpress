@@ -1,53 +1,36 @@
-<?php
-error_reporting(error_level: -1);
+<?php error_reporting(-1);
 
-// Выражение Match/ только PHP8
+$i = 2;
 
-/* $food = 'cake';
-$return_value = match ($food) {
-    'apple' => 'На столе лежит яблоко',
-    'banana' => 'На столе лежит банан',
-    'cake' => 'На столе стоит торт',
+/*$res = match ($i) {
+    1 => 'One',
+    2 => 'Two',
+    3 => 'Three',
+    4 => 'Four',
+    5 => 'Five',
+};*/
+
+/*$res = match ('2') {
+    1, 2, 3 => 'Var < 4',
+    4 => 'Four',
+    default => 'Var > 4',
 };
-var_dump($return_value); */
 
-$i = 3;
-/* $res = match ($i) {
-   1 => 'one',
-   2 => 'two',
-   3 => 'three',
-   4 => 'four',
-   5 => 'five',
-}; */
-
-
-/* $res = match ($i) {
-   1 => 'one',
-   2 => 'two',
-   3 => 'three',
-   4 => 'four',
-   default => 'Hello Friends',
-}; */
-
-/* $res = match ($i) {
-   1, 2, 3 => 'Var > 4',
-   4 => 'four',
-   default => 'Var < 4',
-}; */
+echo $res;*/
 
 $grade = 10;
-/* $res = match (true) {
-   ($grade >= 10) => 'excellent',
-   ($grade >= 7) => 'good',
-   ($grade >= 4) => 'bad',
-   default => 'very bad',
-}; */
+/*$res = match (true) {
+    ($grade >= 10) => 'excellent',
+    ($grade >= 7) => 'good',
+    ($grade >= 4) => 'bad',
+    default => 'very bad',
+};*/
 
-$res = match (true) {
-   ($grade >= 10) && ($grade < 11) => 'excellent',
-   ($grade >= 7) && ($grade < 10) => 'good',
-   ($grade >= 4) && ($grade < 7) => 'bad',
-   default => 'very bad',
+/*$res = match (true) {
+    ($grade >= 10) && ($grade < 13) => 'excellent',
+    ($grade >= 7) && ($grade < 10) => 'good',
+    ($grade >= 4) && ($grade < 7) => 'bad',
+    default => 'very bad',
 };
 
-echo $res;
+echo $res;*/

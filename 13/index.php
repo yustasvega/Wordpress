@@ -1,32 +1,38 @@
-<?php
-error_reporting(error_level: -1);
-//Управляющие конструкции. IF-ELSE-ELSEIF
+<?php error_reporting(-1);
 
-//echo 'Test 1', 'Test 2', 'Test 3';
-//print 'Test 4';
+//echo 'Test 1 ', 'Test 2 ', ' Test 3';
+//print 'Test 4 ';
 
 //var_dump(print 'test');
-//var_dump (echo 'test');
+//var_dump(echo 'test');
 
-$light = 'ellow';
+$light = 'red';
 
-/* if ($light === 'green') {
-   echo 'You can go now';
+/*if ($light == 'green') {
+    echo 'You can go now';
 } else {
-   echo 'Stop';
-} */
+    echo 'Stop';
+}*/
 
-if ($light === 'green') { // если
-   echo 'You can go now';
-} elseif ($light === 'ellow') { // иначе если
-   echo 'Get ready';
-} else {                     // тогда
-   echo 'Stop';
+if ($light == 'green') {
+    echo 'You can go now';
+} elseif ($light == 'yellow') {
+    echo 'Get ready';
+} elseif ($light == 'red') {
+    echo 'Stop';
+    if (2 > 3) {
+        echo '2 > 3';
+    } else {
+        echo '2 < 3';
+    }
+} else {
+    echo 'Something';
 }
 
-/* if ($light === 'yellow') {
-   echo 'Get ready';
+/*if ($light == 'yellow') {
+    echo 'Get ready';
 }
-if ($light === 'red') {
-   echo 'Stop';
-} */
+
+if ($light == 'red') {
+    echo 'Stop';
+}*/

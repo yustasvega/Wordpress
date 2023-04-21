@@ -1,27 +1,37 @@
-<?php //phpinfo() 
-?>
-<!DOCTYPE html>
+<?php //phpinfo() ?>
+<!doctype html>
 <html lang="en">
-
 <head>
-   <meta charset="UTF-8">
-   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <title>Урок 3</title>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Урок 3</title>
 </head>
-
 <body>
 
-   <!-- комментарий-->
+<!-- PHP -->
 
-   <?php
-   //echo '<p>Hello world 5</p>';
-   echo '<p>Hello world 6</p>';
-   ?>
+<?php
 
-   <?= '<p>Hello world 7</p>'; ?>
+/*
+ * Это
+ * многострочный
+ * комментарий
+ * */
+echo '<p>Hello world1!</p>';
+echo '<p>Hello world2!</p>';
 
+//echo '<p>Hello world2!</p>';
+//echo '<p>Hello world2!</p>';
+echo '<p>Hello world2!</p>'; # Комментарий в стиле Unix
+
+?>
+
+<?//= '<p>Hello world3!</p>'; ?>
+<?php //echo '<p>Hello world3!</p>'; ?>
+
+<? echo '<p>Hello world4!</p>'; ?>
 
 </body>
-
 </html>
