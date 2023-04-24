@@ -1,5 +1,5 @@
 <?php error_reporting(-1);
-
+// Функции для работы со строкками
 function debug($data)
 {
     echo '<pre>' . print_r($data, 1) . '</pre>';
@@ -28,23 +28,25 @@ $str2 = 'Привет, мир!';
 $str3 = "<script>alert('©Hello &gt;' + \" world\")</script>";
 $str4 = "Привет!\nВо первых строках своего письма...";
 
-//echo strlen($str);
-//echo mb_strlen($str2, 'UTF-8');
+// echo strlen($str);
+// echo mb_strlen($str2, 'UTF-8');
 
-/*$data = explode(',', $str2);
+/* $data = explode(',', $str2);
 debug($data);
 
-echo implode(',', $data);*/
+echo implode(',', $data); */
 
-//echo htmlspecialchars($str3, ENT_QUOTES, double_encode: false);
-//echo htmlentities($str3);
+// echo htmlspecialchars($str3, ENT_QUOTES, double_encode: false);
+// echo htmlentities($str3);
 
-//echo ltrim($str);
+// echo ltrim($str);
 //echo rtrim($str);
-//echo trim($str, 'H ');
+// echo trim($str, 'H ');
 
-//echo nl2br($str4);
+// echo nl2br($str4);
 
-//debug(str_split($str));
+// debug(str_split($str4)); // По умолчанию латиница
+// debug(mb_str_split($str4)); // Можно  добавлять mb для выведения кириличиских символов
 
-//var_dump(substr($str, -7, 5));
+// var_dump(substr($str2, -7, 5)); // По умолчанию латиница
+// var_dump(mb_substr($str2, -7, 5)); // Можно  добавлять mb для выведения кириличиских символов

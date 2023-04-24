@@ -31,7 +31,7 @@ function user_count($arr)
  * Подсчитайте сумму значений элементов массива. Попробуйте написать 2 варианта решения: со специальной функцией и без нее
  * */
 
-//echo array_sum($nums);
+// echo array_sum($nums);
 function user_sum($arr)
 {
     $cnt = 0;
@@ -51,7 +51,7 @@ function user_sum($arr)
 
 $arr = [];
 for ($i = 1; $i <= 100; $i++) {
-    //    $arr[] = $i;
+    // $arr[] = $i;
     array_push($arr, $i);
 }
 
